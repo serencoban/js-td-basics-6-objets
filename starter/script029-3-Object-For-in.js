@@ -1,6 +1,6 @@
 /*****************************
-* 029-2 - Boucles pour parcourir des objets
-*/
+ * 029-2 - Boucles pour parcourir des objets
+ */
 
 // 2. Boucle for/in pour parcourir des objets
 
@@ -14,18 +14,16 @@ for(const prop in objet) {
 EXERCICE 1 : 
 Parcours l'objet mesFruits pour afficher, pour chacun des fruits, "Le fruit … coûte … €"
 */
-const mesFruits = { 
+const mesFruits = {
   "Pomme": 1.3,
-  "Poire": .5,
+  "Poire": 0.5,
   "Ananas": 3
 };
 
-
-
-
+// Écris ton code ici
 
 /*
-EXERCICE 2 : 
+EXERCICE 2 :
 Parcours l'objet fruit pour afficher chacune de ses propriétés avec, pour chacune, sa valeur
 */
 const fruit = {
@@ -35,12 +33,13 @@ const fruit = {
   "Variété": "Golden"
 };
 
-
-
-
+// Écris ton code ici
 
 // Un mot est un objet de type String => ceci fonctionne également…
 /*
-EXERCICE 3 : 
+EXERCICE 3 :
 Parcours le mot "Bonjour" pour afficher séparément chacune de ses lettres
 */
+const mot = "Bonjour";
+
+// Écris ton code ici
