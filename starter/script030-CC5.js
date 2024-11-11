@@ -40,3 +40,13 @@ du tableau (c'est comme cela qu'on calcule une moyenne).
 
 BONNE CHANCE 😀
 */
+
+const john ={
+    factures :[124,48, 268, 42],
+    montantFinaux:[],
+    pourboire:[],
+    calculPourboire(){
+
+    }
+
+}

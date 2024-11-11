@@ -4,6 +4,7 @@
 
 /* Une MÉTHODE est une fonction associée à un objet */
 
+/********
 const aurora = {
     nom: "Aurora",
     sante: 150,
@@ -11,34 +12,45 @@ const aurora = {
 };
 
 // Affiche "… a … points de vie et … en force"
+console.log(`${aurora.nom} a ${aurora.sante} points de vie et ${aurora.force} en force`)
 
 // Crée une fonction décrire qui prend personnage en paramètre et renvoie la description du personnage
 // écris ta fonction décrire ici
-
+function decrire(personnage){
+    return `${personnage.nom} a ${personnage.sante} points de vie et ${personnage.force} en force`;
+}
 // Utilise cette fonction pour afficher la description d'Aurora
+console.log(decrire(aurora));
+
+*******/
 
 // Ajoute à présent cette fonction à l'intérieur de l'objet aurora
+    // renvoie la description du personnage
+    // écris ton code ici
+// Utilise à présent cette méthode pour afficher la description d'Aurora
+
 const aurora = {
     nom: "Aurora",
     sante: 150,
     force: 25,
-    // renvoie la description du personnage
-    // écris ton code ici
+    decrire(){
+        return `${this.nom} a ${this.sante} points de vie et ${this.force} en force`;
+    }
 };
-// Utilise à présent cette méthode pour afficher la description d'Aurora
+console.log(aurora.decrire());
 
 /*
 EXERCICE 1 : Ajoute une méthode calcAge à john qui calcule son âge
 (en soustrayant sa date de naissance de 2019), le retourne et le stocke dans une propriété age.
 */
-var john = {
+const john = {
     firstName: 'John',
     lastName: 'Smith',
     birthYear: 1992,
     family: ['Jane', 'Mark', 'Bob', 'Emily'],
     job: 'teacher',
     isMarried: false,
-    calcAge: function() {
+    calcAge() {
         return this.age = 2019 - this.birthYear;
     }
 };
@@ -52,6 +64,14 @@ EXERCICE 2 :
 - Utilise cette méthode pour afficher sa surface dans la console
 */
 
+const rectangle ={
+    longueur :5,
+    largeur:3,
+    calcSurface(){
+        return this.longueur * this.largeur;
+    }
+}
+console.log(rectangle.calcSurface())
 /* **********************************
 * Les objets prédéfinis de JavaScript
 */
